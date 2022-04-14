@@ -55,3 +55,8 @@ function removeShow(){
 const li = document.querySelectorAll("li");
 li.forEach(n => n.addEventListener("click", removeShow));
 
+setTimeout(() => {
+    const loading = document.querySelector(".loading");
+    loading.style.display = "none"
+}, 3000);
+
