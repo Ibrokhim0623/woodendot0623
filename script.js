@@ -1,7 +1,7 @@
 $(".carousel").owlCarousel({
     margin: 9,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     responsive: {
         0:{
             items: 1,
@@ -24,7 +24,7 @@ $(".carousel").owlCarousel({
 $(".comment").owlCarousel({
     dots: true,
     loop: true,
-    autoplay: false,
+    autoplay: true,
     items: 1
 });
 
@@ -59,4 +59,15 @@ setTimeout(() => {
     const loading = document.querySelector(".loading");
     loading.style.display = "none"
 }, 3000);
+
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 400,
+    reset: true
+});
+sr.reveal(`.col1`);
+sr.reveal(`.col2, .foot, .subsc, .btn1`, {origin: "bottom", interval: 500});
+sr.reveal(`.img, .col-3`, {origin: "top", interval: 500});
 
