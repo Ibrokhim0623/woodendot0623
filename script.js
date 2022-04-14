@@ -65,9 +65,9 @@ const sr = ScrollReveal({
     distance: "60px",
     duration: 2500,
     delay: 400,
-    reset: true
+    easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 sr.reveal(`.col1`);
-sr.reveal(`.col2, .foot, .subsc, .btn1`, {origin: "bottom", interval: 500});
-sr.reveal(`.img, .col-3`, {origin: "top", interval: 500});
+sr.reveal(`.col2, .btn1`, {origin: "bottom", interval: 500});
+sr.reveal(`.foot, .subsc, .img, .col-3`, {origin: "top", interval: 500});
 
